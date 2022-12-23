@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+
+<body>
+    <script>
+        // В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+        let userNum = Number(prompt('Введите число от 1 до 31'));
+        if (userNum >= 1 && userNum <= 10) {
+            alert(`Число ${userNum} попадает в первую декаду месяца`);
+        } else if (userNum >= 11 && userNum <= 20) {
+            alert(`Число ${userNum} попадает во вторую декаду месяца`);
+        } else if (userNum >= 21 && userNum <= 31) {
+            alert(`Число ${userNum} попадает в третью декаду месяца`);
+        }
+        else {
+            alert(`Числа ${userNum} в месяце нет`);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+
+<body>
+    <script>
+        // Необходимо от пользователя получить число.
+        // Необходимо вывести разряды числа, а именно: количество сотен, десятков и единиц.
+        // Пример:
+        // Пользователь ввел число 163. Программа должна вывести:
+        // "В числе 163 количество сотен: 1, десятков: 6, единиц: 3"
+
+        let userNum = Number(prompt('Введите число'));
+        let numOne = userNum % 10;
+        console.log(numOne);
+        let numTen = (Math.floor(userNum / 10)) % 10;
+        console.log(numTen);
+        let numHun = (Math.floor(userNum / 100)) % 10;
+        console.log(numHun);
+        alert(`В числе ${userNum} количество сотен: ${numHun}, количество десятков: ${numTen}, количество единиц: ${numOne}`);
+
+        // 2ой вариант решения
+        // let userNum = Number(prompt('Введите число'));
+        // let numOne = userNum % 10;
+        // console.log(numOne);
+        // let numTen = (Math.trunc(userNum / 10)) % 10;
+        // console.log(numTen);
+        // let numHun = (Math.trunc(userNum / 100)) % 10;
+        // console.log(numHun);
+        // alert(`В числе ${userNum} количество сотен: ${numHun}, количество десятков: ${numTen}, количество единиц: ${numOne}`);
+    </script>
+</body>
+
+</html>
